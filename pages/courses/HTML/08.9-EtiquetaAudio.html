@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.9-EtiquetaAudio</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>ETIQUETA AUDIO</h1>
+
+<p>- Un elemet audio ens permet posar audio en les nostres webs.Generalment, posarem els nostres audios en una subcarpeta anomenada <i>audio</i> dins de la carpeta <i>assets</i></p>
+
+<h2>ETIQUETA AUDIO I ATRIBUT SRC</h2>
+<p>- L'element audio porta dues etiquetes audio, una d'obertura i una altra de tancament. També porta una atribut <i>src</i> com les imatges.</p>
+
+<pre>
+    <code>
+        &lt;audio src="assets/audio/slipknot_eyeless.mp3">&lt;/audio>
+    </code>
+</pre>
+
+<audio src="assets/audio/slipknot_eyeless.mp3"></audio>
+
+<h2>ATRIBUT CONTROLS</h2>
+<p>Aquest atribut es booleà</p>
+<p>Quan s'insereixi, automaticament tindrem els controls per parar, reproduir o avançar la nostra cançó i altres eines</p>
+
+<pre>
+    <code>
+        &lt;audio src="assets/audio/slipknot_eyeless.mp3" controls>&lt;/audio>
+    </code>
+</pre>
+
+<audio src="assets/audio/slipknot_eyeless.mp3" controls></audio>
+
+<h2>ALTRES ATRIBUTS</h2>
+
+<h3>AUTOPLAY</h3>
+<p>Aquest atribut ens permet que només en recarregar la pàgina es reproduirà, <span style="color: red;"> RECOMANABLE NO UTILITZAR-HO</span>, i si ho fem, millor posar l'atribut muted (si no, invasió de la privasitat)</p>
+
+<pre>
+    <code>
+        &lt;audio src="assets/audio/slipknot_eyeless.mp3" controls autoplay muted>&lt;/audio>
+    </code>
+</pre>
+
+<audio src="assets/audio/slipknot_eyeless.mp3" controls autoplay muted></audio>
+
+<h3>LOOP</h3>
+<p>Aquest atribut ens permet en només acabar l'audio, es torni a reproduir</span></p>
+
+<pre>
+    <code>
+        &lt;audio src="assets/audio/slipknot_eyeless.mp3" controls loop>&lt;/audio>
+    </code>
+</pre>
+
+<audio src="assets/audio/slipknot_eyeless.mp3" controls loop></audio>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.12-MesElements</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>MÉS ELEMENTS DELS FORMULARIS</h1>
+
+<h2>Etiqueta FIELDSET</h2>
+<p>- S'utilitza per agrupar elements dins d'un formulari</p>
+<p>- S'utilitza l'etiqueta legend que permet posar un nom al contingut fieldset</p>
+
+<pre>
+    <code>
+        &lt;form>
+            &lt;fieldset>
+                &lt;legend>Dades personals&lt;/legend>
+                &lt;div>
+                    &lt;label for="name">Nom&lt;/label>
+                    &lt;input type="text" id="name">
+                &lt;/div>
+                &lt;div>
+                    &lt;label for="surname">Cognom&lt;/label>
+                    &lt;input type="text" id="surname">
+                &lt;/div>
+                &lt;button>ENVIAR</button>
+            &lt;/fieldset>
+        &lt;/form>
+    </code>
+</pre>
+
+<form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+        </div>
+        <button>ENVIAR</button>
+    </fieldset>
+</form>
+
+
+<h2>INPUT TIPUS FILE</h2>
+<p>- Serveix per adjuntar fitxers al formulari</p>
+<p>- Amb JavaScript podrem posar un limit de mida per al fitxer adjuntat (300 MB)</p>
+
+<pre>
+    <code>
+        &lt;form>
+            &lt;fieldset>
+                &lt;legend>Dades personals&lt;/legend>
+                &lt;div>
+                    &lt;label for="name">Nom&lt;/label>
+                    &lt;input type="text" id="name">
+                &lt;/div>
+                &lt;div>
+                    &lt;label for="surname">Cognom&lt;/label>
+                    &lt;input type="text" id="surname">
+                &lt;/div>
+                &lt;div>
+                    &lt;input type="file" name="photo" id="personal_photo">
+                &lt;/div>
+                &lt;button>ENVIAR</button>
+            &lt;/fieldset>
+        &lt;/form>
+    </code>
+</pre>
+
+<form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="surname">Cognom</label>
+            <input type="text" id="surname">
+        </div>
+        <div><input type="file" name="photo" id="personal_photo"></div>
+        <button>ENVIAR</button>
+    </fieldset>
+
+</form>
+
+<h2>ETIQUETA METER</h2>
+<p>- A part de l'atribut indispensable value, porta els atributs min, max, low, high i optimum</p>
+
+<pre>
+    <code>
+        &lt;form>
+            &lt;label for="fuel">Combustible&lt;/label>
+            &lt;meter id="fuel" min="0" max="100" value="90" low="0" high="75" optimum="10">&lt;/meter>
+        &lt;/form>
+    </code>
+</pre>
+
+<form>
+    <label for="fuel">Combustible</label>
+    <meter id="fuel" min="0" max="100" value="90" low="0" high="75" optimum="100"></meter>
+</form>
+
+<p>- Si el value es troba més a prop de l'optimim, estarà en verd</p>
+<p>- Si el value està molt per sota de l'optimum, estarà en groc</p>
+
+
+<h2>ETIQUETA PROGRESS</h2>
+<p>- Crea una barra de progrés en funció del seus atributs: <i>value</i> i  <i>max</i></p>
+<p>- Per molt que cambiem el valor de <i>max</i>, la barra no es farà més gran o més petita</p>
+<p>-Una <span style="color: green;">BONA PRÀCTICA</span> és treballar amb percentatges</p>
+
+<pre>
+    <code>
+        &lt;form>
+            &lt;label for="task">Tasca 1&lt;/label>
+            &lt;progress id="task" max="100" value="90"> &lt;/progress>
+        &lt;/form>
+    </code>
+</pre>
+
+<form>
+    <div><label for="task_1">Tasca 1</label></div>
+    <div><progress id="task_1" max="100" value="90"> </progress></div>
+</form>
+<form>
+    <div><label for="task_2">Tasca 2</label></div>
+    <div><progress id="task_2" max="100" value="50"> </progress></div>
+</form>
+<form>
+    <div><label for="task_3">Tasca 3</label></div>
+    <div><progress id="task_3" max="100" value="25"> </progress></div>
+</form>
+
+<h2>ETIQUETA TEXTAREA</h2>
+<p>- Porta els atributs <i>cols</i> i <i>rows</i></p>
+<p>- Serveix per que l'usuari insereixi text</p>
+
+<form>
+    <div>
+        <label for="message">Escriu el teu missatge</label>
+    </div>
+    <div>
+        <textarea name="message" id="textarea_1" cols="50" rows="20"></textarea>
+        <button>ENVIAR</button>
+    </div>
+</form>
+
+</body>
+</html>

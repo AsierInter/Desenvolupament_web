@@ -1,0 +1,1 @@
+- En aquest document es trobarà el codi que s'hagi fet durant les sessions de programació al centre Intermunicipal del Penedès en la durada del curs 2023-24

@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.1-TaulesModificadesAmbHtml</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+
+    <style>
+        .programing {
+            background-color: red;
+        }
+
+        .physics {
+            background-color: green;
+        }
+
+        .catalan {
+            background-color: pink;
+        }
+
+        .MACS {
+            background-color: rgb(223, 223, 96);
+        }
+
+        .tecnology {
+            background-color: rgba(175, 170, 170, 0.795);
+        }
+
+        .PE {
+            background-color: brown;
+        }
+
+        .MATHS {
+            background-color: yellow;
+        }
+
+        .ENGLISH {
+            background-color: purple;
+        }
+
+        .challenges-physics {
+            background-color: greenyellow;
+        }
+
+        .philosophy {
+            background-color: burlywood;
+        }
+
+        .tutory {
+            background-color: rgb(72, 72, 182);
+        }
+
+        .spanish {
+            background-color: rgb(131, 47, 47);
+        }
+
+        .playground {
+            background-color: rgb(104, 97, 97);
+        }
+
+        .ILEC {
+            background-color: rgb(104, 97, 97);
+        }
+    </style>
+</head>
+<body>
+
+<p><a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+<p><a href="/06.Taules.html">Torna a Taules</a></p>
+
+<h1>Modificar taules amb HTML</h1>
+<p>- Podem millorar les nostres taules amb altres etiquetes, i també <b>atributs</b>.</p>
+<p style="color: red;">- Modificar les taules amb el propi HTML (amb atributs), es una mala praxis!!!!</p>
+<p>- També es una manera obsoleta de modificar les mateixes.</p>
+
+<h2>Atributs de &lt;table&gt;</h2>
+<ul type="square">
+    <li><b>Border</b>: modifica la bora de la taula (amb el gruix que indiquem numéricament)</li>
+    <li><b>Align</b>: alinea els elements de la taula (allà on noslatres indiquem)</li>
+    <li><b>Bgcolor</b>: modifica el color de fons de totes les cel·les (o algunes específiques [si nosaltres volem])</li>
+    <li><b>Width</b>: defineix l'amplada general de la taula, tenint més o menys pixels de longitud</li>
+    <li><b>Cellspacing</b>: modifica l'espai que hi ha entre les cel·les</li>
+    <li><b>Cellpadding</b>: modifica la distància a la que es trobarà el contingut de la cel·la amb les cuatre bores del "marc"</li>
+</ul>
+<p>- Es pot modificar l'estil de la bora amb l'atribut <i>border-style</i> (hi ha diferents opcions per escollir)</p>
+<p>- Podem modificar els colors de les cel·les individualment si li afegim un atribut concret a cadascuna, i després al <i>head</i> del document els modifiquem amb un <i>style</i></p>
+
+<h3 id="border">Atribut <i>border</i></h3>
+<table border="7">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3 id="align">Atribut <i>align</i></h3>
+<table align="center">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3 id="bgcolor">Atribut <i>background-color</i></h3>
+<table bgcolor="turquoise">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3 id="width">Atribut <i>width</i></h3>
+<table border="2" width="120%">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3 id="cellspacing">Atribut <i>cellspacing</i></h3>
+<table border="2" cellspacing="20">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3 id="cellpading">Atribut <i>cellpading</i></h3>
+<table border="2" cellpadding="10">
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3>&lt;caption&gt; [títol de la taula]</h3>
+<p>- Aquesta etiqueta es trobarà després de l'etiqueta &lt;table&gt;</p>
+<table border="2" >
+    <caption>Horari Asier Párraga</caption>
+    <td><b>HORA</b></td>
+    <td><b>DILLUNS</b></td>
+    <td><b>DIMARTS</b></td>
+    <td><b>DIMECRES</b></td>
+    <td><b>DIJOUS</b></td>
+    <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td>PROG.</td>
+        <td>FÍSICA</td>
+        <td>CAT</td>
+        <td>FÍSICA</td>
+        <td>MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td>CAT</td>
+        <td>MAT. APL.</td>
+        <td>TECNO</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td>MATES</td>
+        <td>ING</td>
+        <td>MATES</td>
+        <td>RFQ</td>
+        <td>TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+        <td><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+        <td><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td>FILO</td>
+        <td>RFQ</td>
+        <td>FILO</td>
+        <td>MATES</td>
+        <td>FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td>ING</td>
+        <td>TECNO</td>
+        <td>TUTORÍA</td>
+        <td>CAST</td>
+        <td>ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td>CAST</td>
+        <td>ED. FÍSICA</td>
+        <td>PROG</td>
+        <td>MAT. APL.</td>
+        <td>RFQ</td>
+    </tr>
+</table>
+
+<h3>&lt;thead&gt; [table head], &lt;th&gt; [table head], &lt;tbody&gt; [table body], &lt;tfoot&gt; [table foot]</h3>
+<p>- Les capçeleres de les taules s'estableixen amb l'etiqueta &lt;thead&gt;, al començament del títol. Enlloc de portar &lt;td&gt;, portaran &lt;th&gt;. I aquestes etiquetes &lt;th&gt; es posaran automaticament en negreta.</p>
+<table>
+    <thead>
+        <tr>
+        <th><b>HORA</b></th>
+        <th><b>DILLUNS</b></th>
+        <th><b>DIMARTS</b></th>
+        <th><b>DIMECRES</b></th>
+        <th><b>DIJOUS</b></th>
+        <th><b>DIVENDRES</b></th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <th>8:30 - 9:25</th>
+                <th>PROG.</th>
+                <th>FÍSICA</th>
+                <th>CAT</th>
+                <th>FÍSICA</th>
+                <th>MAT. APL.</th>
+            </tr>
+            <tr>
+                <th>9:25 - 10:20</th>
+                <th>CAT</th>
+                <th>MAT. APL.</th>
+                <th>TECNO</th>
+                <th>ED. FÍSICA</th>
+                <th>PROG.</th>
+            </tr>
+            <tr>
+                <th>10:20 - 11:15</th>
+                <th>MATES</th>
+                <th>ING</th>
+                <th>MATES</th>
+                <th>RFQ</th>
+                <th>TECNO</th>
+            </tr>
+            <tr>
+                <th>11:15 - 11:45</th>
+                <th><b>PATI</b></th>
+                <th><b>PATI</b></th>
+                <th><b>PATI</b></th>
+                <th><b>PATI</b></th>
+                <th><b>PATI</b></th>
+
+            </tr>
+            <tr>
+                <th>11:45 - 12:15</th>
+                <th><b>ILEC</b></th>
+                <th><b>ILEC</b></th>
+                <th><b>ILEC</b></th>
+                <th><b>ILEC</b></th>
+                <th><b>ILEC</b></th>
+            </tr>
+            <tr>
+                <th>12:15 - 13:10</th>
+                <th>FILO</th>
+                <th>RFQ</th>
+                <th>FILO</th>
+                <th>MATES</th>
+                <th>FÍSICA</th>
+            </tr>
+            <tr>
+                <th>13:10 - 14:05</th>
+                <th>ING</th>
+                <th>TECNO</th>
+                <th>TUTORÍA</th>
+                <th>CAST</th>
+                <th>ING</th>
+            </tr>
+            <tr>
+                <th>14:05 - 15:00</th>
+                <th>CAST</th>
+                <th>ED. FÍSICA</th>
+                <th>PROG</th>
+                <th>MAT. APL.</th>
+                <th>RFQ</th>
+            </tr>
+    </tbody>
+    <tfoot>
+        <td>Això es un &lt;tfoot&gt;.</td>
+    </tfoot>
+</table>
+
+<h3>&lt;colgroup&gt; [column group] i &lt;col&gt; [column]</h3>
+<p>- L'etiqueta &lt;colgroup&gt;, serveix per donar-li color a <b>una columna</b> i a dins haurà una etiqueta &lt;col&gt;.</p>
+<p>- L'etiqueta &lt;col&gt;, que està a dins de &lt;colgroup&gt;, agafa els atributs <i>span</i>(per seleccionar el número de columnes [si hi ha un span previ, s'agafaran les següents columnes que segueixin les 'no seleccionades']) <i>background-color</i> (per seleccionar el seu color de columna).</p>
+<table>
+    <colgroup>
+        <col span="1" style="background-color: grey;">
+        <col span="5" style="background-color: rgb(194, 120, 120);">
+    </colgroup>
+    <thead>
+        <tr>
+            <th><b>HORA</b></th>
+            <th><b>DILLUNS</b></th>
+            <th><b>DIMARTS</b></th>
+            <th><b>DIMECRES</b></th>
+            <th><b>DIJOUS</b></th>
+            <th><b>DIVENDRES</b></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>8:30 - 9:25</td>
+            <td>PROG.</td>
+            <td>FÍSICA</td>
+            <td>CAT</td>
+            <td>FÍSICA</td>
+            <td>MAT. APL.</td>
+        </tr>
+        <tr>
+            <td>9:25 - 10:20</td>
+            <td>CAT</td>
+            <td>MAT. APL.</td>
+            <td>TECNO</td>
+            <td>ED. FÍSICA</td>
+            <td>PROG.</td>
+        </tr>
+        <tr>
+            <td>10:20 - 11:15</td>
+            <td>MATES</td>
+            <td>ING</td>
+            <td>MATES</td>
+            <td>RFQ</td>
+            <td>TECNO</td>
+        </tr>
+        <tr>
+            <td>11:15 - 11:45</td>
+            <td><b>PATI</b></td>
+            <td><b>PATI</b></td>
+            <td><b>PATI</b></td>
+            <td><b>PATI</b></td>
+            <td><b>PATI</b></td>
+
+        </tr>
+        <tr>
+            <td>11:45 - 12:15</td>
+            <td><b>ILEC</b></td>
+            <td><b>ILEC</b></td>
+            <td><b>ILEC</b></td>
+            <td><b>ILEC</b></td>
+            <td><b>ILEC</b></td>
+        </tr>
+        <tr>
+            <td>12:15 - 13:10</td>
+            <td>FILO</td>
+            <td>RFQ</td>
+            <td>FILO</td>
+            <td>MATES</td>
+            <td>FÍSICA</td>
+        </tr>
+        <tr>
+            <td>13:10 - 14:05</td>
+            <td>ING</td>
+            <td>TECNO</td>
+            <td>TUTORÍA</td>
+            <td>CAST</td>
+            <td>ING</td>
+        </tr>
+        <tr>
+            <td>14:05 - 15:00</td>
+            <td>CAST</td>
+            <td>ED. FÍSICA</td>
+            <td>PROG</td>
+            <td>MAT. APL.</td>
+            <td>RFQ</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Això es un &lt;tfoot&gt;.</td>
+    </tfoot>
+</table>
+
+<h3>Atribut &lt;rowspan&gt; i &lt;colspan&gt;</h3>
+<p>- L'atribut &lt;rowspan&gt;, serveix per asignar el mateix 'item' a un número de caselles determinat i hem d'eliminar la cel·la de sota perquè no es descuadri.</p>
+<p>- L'atribut &lt;colspan&gt;, serveix per asignar el mateix 'item' a un número de files determinat i hem d'eliminar les cel·les del costat perquè no es descuadri.</p>
+<table border="2">
+    <thead>
+        <tr>
+            <th><b>HORA</b></th>
+            <th><b>DILLUNS</b></th>
+            <th><b>DIMARTS</b></th>
+            <th><b>DIMECRES</b></th>
+            <th><b>DIJOUS</b></th>
+            <th><b>DIVENDRES</b></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>8:30 - 9:25</td>
+            <td rowspan="2" bgcolor="blue">PROG.</td>
+            <td>FÍSICA</td>
+            <td>CAT</td>
+            <td>FÍSICA</td>
+            <td>MAT. APL.</td>
+        </tr>
+        <tr>
+            <td>9:25 - 10:20</td>
+            <!-- <th>CAT</th> -->
+            <td>MAT. APL.</td>
+            <td>TECNO</td>
+            <td>ED. FÍSICA</td>
+            <td rowspan="2" bgcolor="blue">PROG.</td>
+        </tr>
+        <tr>
+            <td>10:20 - 11:15</td>
+            <td>MATES</th>
+            <td>ING</td>
+            <td>MATES</td>
+            <td>RFQ</td>
+            <!-- <td>TECNO</td> -->
+        </tr>
+        <tr>
+            <td>11:15 - 11:45</td>
+            <td align=center colspan="5" bgcolor="grey"><b>PATI</b></td>
+        </tr>
+        <tr>
+            <td>11:45 - 12:15</td>
+            <td align=center colspan="5" bgcolor="grey"><b>ILEC</b></td>
+
+        </tr>
+        <tr>
+            <td>12:15 - 13:10</td>
+            <td>FILO</td>
+            <td>RFQ</td>
+            <td>FILO</td>
+            <td>MATES</td>
+            <td>FÍSICA</td>
+        </tr>
+        <tr>
+            <td>13:10 - 14:05</td>
+            <td>ING</td>
+            <td>TECNO</td>
+            <td>TUTORÍA</td>
+            <td>CAST</td>
+            <td>ING</td>
+        </tr>
+        <tr>
+            <td>14:05 - 15:00</td>
+            <td>CAST</td>
+            <td>ED. FÍSICA</td>
+            <td>PROG</td>
+            <td>MAT. APL.</td>
+            <td>RFQ</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Això es un &lt;tfoot&gt;.</td>
+    </tfoot>
+</table>
+
+<h3>&lt;table&gt; tottally modified </h3>
+<p>- Aquesta taula s'ha modificat totalment amb un style al &lt;head&gt; i amb els atributs mencionats previament</p>
+<table border="7" border-style="inset" align="center" cellpadding="7" cellspacing="5">
+    <colgroup>
+        <col span="1" style="background-color: rgb(139, 139, 139);">
+    </colgroup>
+    <tr style="background-color:grey">
+        <td><b>HORA</b></td>
+        <td><b>DILLUNS</b></td>
+        <td><b>DIMARTS</b></td>
+        <td><b>DIMECRES</b></td>
+        <td><b>DIJOUS</b></td>
+        <td><b>DIVENDRES</b></td>
+    </tr>
+    <tr>
+        <td>8:30 - 9:25</td>
+        <td class="programing">PROG.</td>
+        <td class="physics">FÍSICA</td>
+        <td class="catalan">CAT</td>
+        <td class="physics">FÍSICA</td>
+        <td class="MACS">MAT. APL.</td>
+    </tr>
+    <tr>
+        <td>9:25 - 10:20</td>
+        <td class="catalan">CAT</td>
+        <td class="MACS">MAT. APL.</td>
+        <td class="tecnology">TECNO</td>
+        <td class="PE">ED. FÍSICA</td>
+        <td class="programing">PROG.</td>
+    </tr>
+    <tr>
+        <td>10:20 - 11:15</td>
+        <td class="MATHS">MATES</td>
+        <td class="ENGLISH">ING</td>
+        <td class="MATHS">MATES</td>
+        <td class="challenges-physics">RFQ</td>
+        <td class="tecnology">TECNO</td>
+    </tr>
+    <tr>
+        <td>11:15 - 11:45</td>
+        <td class="playground" colspan="5" align="center"><b>PATI</b></td>
+
+    </tr>
+    <tr>
+        <td>11:45 - 12:15</td>
+        <td class="ILEC" colspan="5" align="center"><b>ILEC</b></td>
+    </tr>
+    <tr>
+        <td>12:15 - 13:10</td>
+        <td class="philosophy">FILO</td>
+        <td class="challenges-physics">RFQ</td>
+        <td class="philosophy">FILO</td>
+        <td class="MATHS">MATES</td>
+        <td class="physics">FÍSICA</td>
+    </tr>
+    <tr>
+        <td>13:10 - 14:05</td>
+        <td class="ENGLISH">ING</td>
+        <td class="tecnology">TECNO</td>
+        <td class="tutory">TUTORÍA</td>
+        <td class="spanish">CAST</td>
+        <td class="ENGLISH">ING</td>
+    </tr>
+    <tr>
+        <td>14:05 - 15:00</td>
+        <td class="spanish">CAST</td>
+        <td class="PE">ED. FÍSICA</td>
+        <td class="programing">PROG</td>
+        <td class="MACS">MAT. APL.</td>
+        <td class="challenges-physics">RFQ</td>
+    </tr>
+</table>
+</body>
+</html>
+

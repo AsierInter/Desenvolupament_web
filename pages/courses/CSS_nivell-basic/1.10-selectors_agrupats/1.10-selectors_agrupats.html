@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.10-selectors_agrupats</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <p><a href="../index_courses_css_basic.html.html">Anar a l'índex</a></p>
+
+<h1>Selectors agrupats</h1>
+
+<p>- Per donar-li el mateix estil a un grup de classes, haurem de fer el mateix que amb una sola classe, però separant els diferents atributs per comes "<b>,</b>"</p>
+<p>- <span style="color: green;">BONA PRAXIS</span> és estructurar-ho d'aquesta manera</p>
+<p>- És el millor a fer per donar el mateix estil a diverses:</p>
+<li>
+    <ul>Classes</ul>
+    <ul>Atributs</ul>
+    <ul>Etiquetes</ul>
+    <ul>Ids</ul>
+</li>
+
+<h2>CLASSES A SELECCIONAR</h2>
+
+<pre>
+    <code>
+        .text-1 {
+            background-color: red;
+        }
+    </code>
+</pre>
+<pre>
+    <code>
+        .text-2 {
+            background-color: red;
+        }
+    </code>
+</pre>
+<pre>
+    <code>
+        .text-3 {
+            background-color: red;
+        }
+    </code>
+</pre>
+<pre>
+    <code>
+        .text-4 {
+            background-color: red;
+        }
+    </code>
+</pre>
+
+<h2>RESULTAT</h2>
+<pre>
+    <code>
+        .text-1,
+        .text-2,
+        .text-3,
+        .text-4  {
+            background-color: red;
+        }
+    </code>
+</pre>
+
+
+</body>
+</html>

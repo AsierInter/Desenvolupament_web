@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.1-EstructuraBasicaFormularis</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+
+<h1>Estructura básica d'un formulari</h1>
+<p>- L'estructura básica d'un formulari d'HTML, está formada per les següents etiquetes:</p>
+<ol type="I">
+<li>form</li>
+<li>label</li>
+<li>button</li>
+<li>input</li>
+</ol>
+
+<h2>Etiquetes</h2>
+
+<h3>&lt;form&gt;</h3>
+<p>- Aquesta etiqueta englobarà tots els elements del formulari <b><span style="color: red;">EXCEPTE</span></b> els atributs globals</p>
+
+<h3>&lt;label&gt;</h3>
+<p>- Serveix per escriure el nom del camp a emplenar, es troba <b>a dins</b> de &lt;form&gt;</p>
+
+<h3>&lt;input&gt;</h3>
+<p>- Serveix perquè l'usuari pugui contestar al formulari, depenent del seu atribut es veurà d'una manera o una altra, hi han 22 tipus d'INPUT</p>
+
+<h3>&lt;button&gt;</h3>
+
+
+<h2>Exemples</h2>
+
+<pre>
+<code>
+    &lt;form&gt;
+        &lt;label&gt; Nom &lt;/label&gt;
+        &lt;input&gt;
+        &lt;button&gt; Enviar formulari &lt;button&gt;
+    &lt;/form&gt;
+</code>
+</pre>
+<form action="index.html">
+    <label>Nom:</label>
+    <input type="text">
+    <button>Enviar formulari</button>
+</form>
+<p>- El comportament  per defecte d'un formulari, es enviar les dades i recargar la pàgina</p>
+<p>- Amb l'atribut <i>action</i> de l'etiqueta &lt;form&gt;, podem enviar les dades recullides a un document <b>PHP</b>, que es farà més endavant, perque es necesita un servidor.</p>
+</body>
+</html>

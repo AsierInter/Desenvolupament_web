@@ -1,0 +1,24 @@
+[href] {
+    background-color: lightgreen;
+}
+
+[href="https://google.com"] {
+    background-color: purple;
+}
+
+[href^="color"] {
+    background-color: olivedrab;
+
+}
+
+[href^="seccio"] {
+    background-color: greenyellow;
+}
+
+[href*="modo"] {
+    background-color: yellowgreen;
+}
+
+[href="color-blau"] {
+    background-color: aquamarine;
+}

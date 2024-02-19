@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-Atributs</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p> <a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+    <h1>03-Atributs</h1>
+    <p>- El valor de l'atribut, no pot contenir espais, ja que si no,CSS no acceptarà aquesta tribut odonarà error</p>
+    <p>- L'atribut més important és l'<i>ID</i> (i és únic) i amb CSS podrem treballar amb més facilitat amb elements "destacables"</p>
+    <p>- Un dels atributs més importants es class, que serveix per donar estils amb el fitxer CSS</p>
+    <p>- El "<i>tooltip</i>" de <b>title</b>, serveix per ajudar-nos a entendre les funcions dels diferents elements d'HTML</p>
+    <p>- <i>data-*</i> (serveix per emmagatzeman dades en un element html)</p>
+
+    <h2>Tipus d'atributs</h2>
+    <h3>ATRIBUTS GLOBALS</h3>
+    <p><i>class</i></p>
+    <p><i>id</i></p>
+    <p><i>title</i></p>
+    <p><i>style</i></p>
+
+<style>
+    .titol {color:red;}
+
+</style>
+<h1 title="SOY EL GRAN TÍTOL">SUMARI</h1>
+<h2 title="Soc un títol" id="primera_part" class="titol" >PRIMERA PART</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit eligendi, distinctio cupiditate nemo
+    nostrum provident totam beatae dolores laborum quo consequuntur amet esse, eos molestiae doloribus itaque mollitia
+    ipsam.</p>
+<h2 title="Soc un altre títol"id="segona_part" class="titol">SEGONA PART</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit eligendi, distinctio cupiditate nemo
+    nostrum provident totam beatae dolores laborum quo consequuntur amet esse, eos molestiae doloribus itaque mollitia
+    ipsam.</p>
+<h2 title="Soc un altre altre títol"id="tercera_part" class="titol">TERCERA PART</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit eligendi, distinctio cupiditate nemo
+    nostrum provident totam beatae dolores laborum quo consequuntur amet esse, eos molestiae doloribus itaque mollitia
+    ipsam.</p>
+
+
+    <script>
+        const p= document.getElementById("primera_part")
+        console.log(p.textContent)
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+
+<style>
+    .parrafo_align{
+        text-align: center;
+    }
+    .parrafo_align2{
+        text-align: right;
+    }
+    .silvertext{
+        background-color: silver;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+        <p><a href="index_exercicis.html">ANAR A L'INDEX D'EXERCICIS</a></p>
+
+<h1>Ejercicios</h1>
+
+<h2>1.Cuatro párrafos con estilos</h2>
+<p class="parrafo_align">Primer <span style="color: red;">párrafo</span></p>
+<p class="silvertext">Segundo párrafo</p>
+<p class="parrafo_align2">Tercer <span style="color: red;">párrafo</span></p>
+<p class="silvertext">Cuarto párrafo</p>
+
+<h2>Listas de enlaces</h2>
+
+<ul>
+    <li>Buscadores</li>
+        <ul>
+            <li><a href="https://www.bing.com/" target="_blank">Bing</a></li>
+            <li><a href="https://www.google.es/" target="_blank">Google</a></li>
+        </ul>
+</ul>
+<ul>
+    <li>Redes sociales</li>
+        <ul>
+            <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+        </ul>
+</ul>
+
+<h2>Grupo de música (Queen)</h2>
+
+<p>Banda britànica de <u>rock</u> formada en <b>1970</b> en <i>Londres</i>.</p>
+
+<h4>Integrantes del grupo</h4>
+<ul>
+    <li>Brian May</li>
+    <li>Freddie Mercury</li>
+    <li>Jhon Deacon</li>
+    <li>Roger Taylor</li>
+</ul>
+
+<h4>Discografía</h4>
+<table border="2">
+    <thead>
+        <tr style="background-color: grey;">
+            <td>Año</td>
+            <td>Disco</td>
+        </tr>
+    </thead>
+    <tr>
+        <td>1975</td>
+        <td>A night at the Opera</td>
+    </tr>
+    <tr>
+        <td>1986</td>
+        <td style="background-color: goldenrod;">A Kind of Magic</td>
+    </tr>
+    <tr>
+        <td>1989</td>
+        <td>The Mirade</td>
+    </tr>
+    <tfoot>
+        <tr>
+            <td colspan=2 style="background-color: grey;">"A Kind of Magic" fue el álbum más exitoso</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h4>Sitio web oficial</h4>
+
+<p><a href="https://queenonlinestore.com/" target="_blank">Clica aquí</a></p>
+
+<h2>EJERCICIO CREACIÓN DE UN FORMULARIO HTML A PARTIR DE ESPECIFICACIONES</h2>
+
+<form>
+    <div>
+        <label for=""><b>Nombre:</b><input type="text" placeholder="Escribe tu nombre"></label>
+    </div>
+    <div>
+        <label for=""><b>Email:</b><input type="text" placeholder="correo@empresa.com"></label>
+    </div>
+    <div>
+        <label for="seleccion"><b>Asunto</b></label></div>
+    <div>
+        <select name="asunto" id="seleccion">
+            <option value="queja">Queja</option>
+            <option value="reclamacion">Reclamación</option>
+            <option value="presupusto">Presupuesto</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label><b>Como nos has conocido?</b>
+            <input type="checkbox" value="friend"> <label>Un amigo</label>
+            <input type="checkbox" value="Google"> <label>Googleando</label>
+            <input type="checkbox" value="mailing"> <label>Buzoneo</label>
+            <input type="checkbox" value="others"> <label>Otros</label>
+        </label>
+    </div>
+    <div>
+        <label for="message"><b>Escribe tu mensaje</b>
+    </div>
+    <div>
+        <textarea name="mensaje_usuario" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="checkbox" value="terminos_condiciones">
+        <label for="terminos_condiciones">He leído y acepto el <b>aviso legal</b> y la <b>política de privacidad</b></label>
+
+    </div>
+    <div>
+        <button>ENVIAR</button>
+    </div>
+</form>
+
+
+
+</body>
+</html>

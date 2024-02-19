@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.8-InputRadio</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>INPUT DE TIPUS RADIO</h1>
+<p>- Ens permet contruir caselles de selecció múltiple</p>
+
+<form>
+    <label> Masculí
+        <input type="radio">
+    </label>
+    <label> Femení
+        <input type="radio">
+    </label>
+    <label>No binari
+        <input type="radio">
+    </label>
+    <button>Enviar</button>
+</form>
+
+<h2>Atributs importants</h2>
+<h3>Atribut name</h3>
+<p>Serveix perque <span style="color: red;">NO DEIXI</span> seleccionar varies caselles</p>
+
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender">
+    <label>Femení</label>
+    <input type="radio" name="gender">
+    <label>No binari</label>
+    <input type="radio" name="gender">
+    <button>Enviar</button>
+</form>
+
+<h3>Atribut value</h3>
+<p>- Serveix per poder donar-li un valor perquè el servidor ho pugui emmagatzemar</p>
+
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender" value="male">
+    <label>Femení</label>
+    <input type="radio" name="gender" value="female">
+    <label>No binari</label>
+    <input type="radio" name="gender" value="non_binary">
+    <button>Enviar</button>
+</form>
+
+<h2>Atributs accessoris booleans</h2>
+<p>- Són atributs que van bé depenent de la situació:</p>
+<ul>
+    <li>checked</li>
+    <li>disabled</li>
+    <li>autofocus</li>
+    <li>required</li>
+</ul>
+
+<h4>checked</h4>
+<p>- Omple una casella automaticament</p>
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender" value="male" checked>
+    <label>Femení</label>
+    <input type="radio" name="gender" value="female">
+    <label>No binari</label>
+    <input type="radio" name="gender" value="non_binary">
+    <button>Enviar</button>
+</form>
+
+<h4>disabled</h4>
+<p>- Inabilita la casella a seleccionar</p>
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender" value="male" disabled>
+    <label>Femení</label>
+    <input type="radio" name="gender" value="female">
+    <label>No binari</label>
+    <input type="radio" name="gender" value="non_binary">
+    <button>Enviar</button>
+</form>
+
+<h4>autofocus</h4>
+<p>- Sugereix una casella a emplenar</p>
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender" value="male" autofocus>
+    <label>Femení</label>
+    <input type="radio" name="gender" value="female">
+    <label>No binari</label>
+    <input type="radio" name="gender" value="non_binary">
+    <button>Enviar</button>
+</form>
+
+<h4>required</h4>
+<p>- Obliga a l'usuari a seleccionar una casella</p>
+<form>
+    <label>Masculí</label>
+    <input type="radio" name="gender" value="male" required>
+    <label>Femení</label>
+    <input type="radio" name="gender" value="female">
+    <label>No binari</label>
+    <input type="radio" name="gender" value="non_binary">
+    <button>Enviar</button>
+</form>
+
+</body>
+</html>

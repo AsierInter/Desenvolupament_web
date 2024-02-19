@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.2-AssociarLabelAmbInput</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+
+<h1>Associar label a input</h1>
+
+<h2>Associació més comuna</h2>
+<pre>
+<code>
+    &lt;form&gt;
+        &lt;label for="name"&gt; Nom &lt;/label&gt;
+        &lt;input id="name"&gt;
+        &lt;button&gt; Enviar formulari &lt;button&gt;
+    &lt;/form&gt;
+</code>
+</pre>
+
+<form>
+    <label for="nom"> NOM</label>
+    <input id="nom">
+    <button>Enviar el formulari amb la forma més comuna</button>
+</form>
+
+<h2>Associació menys comuna</h2>
+<p>- El resultat visual és el mateix, pero per donar estils és més complicat, degut a que les etiquetes &lt;label&gt; i &lt;input&gt; estan unides en una sola</p>
+
+<pre>
+<code>
+    &lt;form&gt;
+        &lt;label&gt; Nom
+        &lt;input&gt;
+        &lt;/label&gt;
+        &lt;button&gt; Enviar formulari
+    &lt;/form&gt;
+</code>
+</pre>
+
+<form>
+    <label> NOM
+        <input>
+    </label>
+    <button>Enviar el formulari amb la forma menys comuna
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.12-EtiquetaFigure</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+
+<h1>ELEMENT FIGURE</h1>
+<p>- Representa contingut independent (acompanyat d'un títol).</p>
+<p>- És independent del flux principal</p>
+<p>- Generalment es tracta de: una imatge, una il·lustració, un diagrama, un fragment de codi, o un esquema al que es fa referència al text principal, però es pot moure a una altra pàgina sense que afecti al fluc principal</p>
+
+<h2>Etiqueta <i>figure</i></h2>
+<p>- Porta etiquetes d'obertura y tancament</p>
+
+<h2>Etiqueta <i>img</i></h2>
+<p>- No porta etiqueta de tancament però si que va amb el seu atribut <b>src</b> i <b>alt</b></p>
+
+<h2>Etiqueta <i>figcaption</i></h2>
+<p>- Es fa servir per posar un peu de taula o figura</p>
+<p>- Està dins de l'etiqueta figure</p>
+<p>- Si es posa a sobre de l'imatge: serà un peu de figura normal</p>
+<pre>
+    <code>
+        &lt;figure>
+            &lt;figcaption>Esta foto es de colores&lt;/figcaption>&lt;img src="assets/colores.png" alt="Imagen de colores">
+        &lt;/figure>
+    </code>
+</pre>
+<figure>
+    <figcaption>Esta foto es de colores</figcaption><img src="assets/colores.png" alt="Imagen de colores">
+</figure>
+
+<p>- Si es posa a dalt de l'imatge: serà un peu de taula</p>
+
+<pre>
+    <code>
+        &lt;figure>&lt;img src="assets/colores.png" alt="Imagen de colores">
+            &lt;figcaption>Esta foto es de colores&lt;/figcaption>
+        &lt;/figure>
+    </code>
+</pre>
+
+<figure><img src="assets/colores.png" alt="Imagen de colores"><figcaption>Esta foto es de colores</figcaption></figure>
+
+<ul>
+    <li><img src="" alt=""></li>
+    <li><img src="" alt=""></li>
+    <li><img src="" alt=""></li>
+    <li><img src="" alt=""></li>
+    <li><img src="" alt=""></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.2-Ordered_list</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+<p> <a href="/05.Lists.html">TORNA A <i>05.Lists</i></a></p>
+
+<h1>&lt;ol&gt; [ordered lists]</h1>
+<p>- Els elements han d'estar entre etiquetes <b>&lt;ol&gt;</b> significa 'ordered list'. </p>
+<p>- Els elements han d'estar entre etiquetes <b>&lt;li&gt;</b>, dins de la <b>&lt;ol&gt;</b>.</p>
+<h2>Atribut <i>type</i></h2>
+<p>- El <b>type</b> de les <b>ol</b>, assignen diferents valor per després editar amb CSS.</p>
+<ol><b>'a'</b> indica lletres en minuscula per ordenar</ol>
+<ol type="a">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<ol><b>'A'</b> indica lletres mayúscules per ordenar</ol>
+<ol type="A">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<ol><b>'i'</b> indica nombres romans en minuscula per ordenar</ol>
+<ol type="i">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<ol><b>'I'</b> indica nombres romans en mayúscules per ordenar</ol>
+<ol type="I">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<ol><b>'1'</b> indica nombres per ordenar</ol>
+<ol type="1">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<h2>Atribut <i>start</i></h2>
+<p>-Si li afegim l'atribut <b>start</b>, podrem dir des d'on començarà la nostra llista</p>
+<ol type="1">
+    <li>U</li>
+    <li>DOS</li>
+    <li>TRES</li>
+    <li>CUATRE</li>
+</ol>
+
+<h2>Llistes imbrincades</h2>
+<p>Dins d'una &lt;ol&gt; podem posar elements &lt;li&gt;, pero per imbrincarles fiquan altres llistes &lt;ol&gt; a dins.</p>
+
+<ol>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+    <ol>
+        <li>Element imbrincat 1</li>
+        <li>Element imbrincat 2</li>
+        <li>Element imbrincat 3</li>
+    </ol>
+</ol>
+
+<h3><i>TIPS GENERALS</i></h3>
+<p>- Per optimitzar el que volem introduir (si es repeteix molt), podem fer: <b><i>el que volem escriure</i>*<i>número</i></b></p>
+<p>- Hi ha una alternativa, per directament posar directament una class: <b><i>el que volem escriure</i>.pepino*<i>número</i></b></p>
+<ol type="A">
+    <li class="recepta">Pas 1</li>
+    <li class="recepta">Pas 2</li>
+    <li class="recepta">Pas 3</li>
+    <li class="recepta">Pas 4</li>
+    <li class="recepta">Pas 5</li>
+    <li class="recepta">Pas 6</li>
+    <li class="recepta">Pas 7</li>
+    <li class="recepta">Pas 8</li>
+    <li class="recepta">Pas 9</li>
+</ol>
+</body>
+</html>

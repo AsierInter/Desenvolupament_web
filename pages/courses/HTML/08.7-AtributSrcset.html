@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>ATRIBUT <i>SRCSET</i></h1>
+
+<p>- Aquest atribut permet que depenent del tamany de la teva pantalla, es mostri una imatge o una altre, d'aquesta manera, <i>srcset</i> ens permet utilitzar un conjunt d'imatges, de les quals el navegador escollirà la més adequada (la qual cosa amb l'etiqueta &lt;img&gt; no es podia fer)</p>
+<p>- Es col·loca entre les etiquetes &lt;source&gt; i &lt;picture&gt;</p>
+<p>- Es col·loca una <i>img</i> per defecte, i després es possen els <i>srcset</i></p>
+
+
+<pre>
+    <code>
+        &lt;picture>
+            &lt;source media="(min-width:650px)" srcset="dog.webp">
+            &lt;img src="assets/dog_2.jpeg" alt="Dog" style="width:auto;">
+        &lt;/picture>
+    </code>
+</pre>
+
+<picture>
+    <source media="(min-width:650px)" srcset="dog.webp">
+    <img src="assets/images/dog_2.jpeg" alt="Dog" style="width:auto;">
+</picture>
+
+
+</body>
+</html>
