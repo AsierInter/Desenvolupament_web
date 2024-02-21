@@ -1,0 +1,23 @@
+
+.title {
+    color: tomato;
+    font-size: 50px;
+}
+
+h1 span {
+    color: palevioletred;
+}
+
+.text {
+    color: grey;
+}
+
+.link {
+    text-decoration: none;
+    color: tan;
+}
+
+/* .link {
+    color: inherit;
+} */
+
