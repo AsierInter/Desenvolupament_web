@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
     <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<p><a href="/index.html">Tornar a l'índex</a></p>
 
-<ul>
-    <li><a href="https://github.com/AsierInter"><img src="" alt="GitHub" class="icon">GitHub</a></li>
-    <li><a href="https://mail.google.com/mail/u/1/#inbox"><img src="" alt="Gmail" class="icon">Gmail: aparragav@intermunicipal.com</a></li>
-    <li><a href="https://discord.com/app"><img src="" alt="Discord" class="icon">el_4sier</a></li>
-    <li><a href="https://twitter.com/AsierParraga"><img src="" alt="Twitter" class="icon">Twitter</a></li>
-    <li><a href="https://www.instagram.com/asier.parraga/"><img src="" alt="Instargram" class="icon">Instagram</a></li>
-</ul>
+
+<div class="form">
+    <form action="" method="get">
+        <h1>Contacta amb Asier</h1>
+        <div class="input-user">
+            <input placeholder="Nom" type="text" name="name" id="name" required>
+        </div>
+        <div class="input-user">
+            <input placeholder="Cognom" type="text" name="surname" id="surname" required>
+        </div>
+        <div class="input-user">
+            <i class="fa-solid fa-envelope icon"></i>
+            <input placeholder="Correu electrònic" type="text" name="email_address" id="email_adress" required>
+        </div>
+        <div class="input-user">
+            <i class="fa-solid fa-phone icon"></i>
+            <input placeholder="Màxim 9 xifres" type="tel" name="phone" id="phone" required>
+        </div>
+        <div class="input-user">
+            <textarea class="message" name="text" id="text" cols="50" rows="10" placeholder="Escriu aquí el teu missatge" required></textarea>
+        </div>
+        <div>
+            <button class="button">Enviar</button>
+        </div>
+    </form>
+</div>
 
 </body>
 </html>

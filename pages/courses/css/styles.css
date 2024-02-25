@@ -1,9 +1,78 @@
+/* Ajustaments generals */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Logo */
+header {
+    background: black;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+    float: left;
+}
+
+#item_1 {
+    float: left;
+}
+
+#item_2 {
+    float: right;
+}
+
+/* Header*/
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #bd2929;
+}
+
+/* Logo i informació de la pàgina */
 .logo {
+    float: left;
     padding: 15px 0 0 20px;
     text-decoration: none;
     height: 60px;
+}
+
+.logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+.site-name {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #fff;
 }
 
 /* Cursos */
@@ -12,17 +81,93 @@
     text-align: center;
 }
 
+.content::hover {
+    background-color: #bd2929;
+}
+
 .content p {
     font-size: 60px;
     font-weight: bold;
     margin: 1em 0;
 }
 
-.content a{
-    color: black;
+.content a {
+    color: #fff;
     text-decoration: none;
-    background: #b67718;
-    border-radius: 25px;
+    background: black;
+    border-radius: 5px;
     font-size: 30px;
     margin: 5px;
+    padding: 5px;
+}
+
+
+/* Footer */
+.container-footer {
+    width: 100px;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 20px;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.github-icon:hover {
+    background-color: grey;
+}
+
+.discord-icon:hover {
+    background-color: rgb(88, 101, 242);
+}
+
+.mail-icon:hover {
+    background-color: rgb(235, 74, 40);
+}
+
+.twitter-icon:hover {
+    background-color: grey;
+}
+
+.instagram-icon:hover {
+    background: linear-gradient(#FCDE30, #E9712A, #D2313B, #AE4198, #754BA1, #5443AB);
+}
+
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+}
+
+.container-footer footer h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
 }
