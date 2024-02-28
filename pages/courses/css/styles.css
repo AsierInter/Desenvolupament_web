@@ -79,28 +79,33 @@ nav ul li:hover {
 
 .content {
     text-align: center;
-}
-
-.content::hover {
-    background-color: #bd2929;
-}
-
-.content p {
-    font-size: 60px;
-    font-weight: bold;
-    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .content a {
     color: #fff;
     text-decoration: none;
-    background: black;
+    background-color: black;
     border-radius: 5px;
     font-size: 30px;
-    margin: 5px;
-    padding: 5px;
 }
 
+img {
+    height: 125px;
+    width: 100px;
+}
+.content .course-container {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: auto;
+    align-self: center;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 100px;
+}
 
 /* Footer */
 .container-footer {
