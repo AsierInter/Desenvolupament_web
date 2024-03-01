@@ -85,14 +85,6 @@ nav ul li:hover {
     width: 100%;
 }
 
-.content a {
-    color: #fff;
-    text-decoration: none;
-    background-color: black;
-    border-radius: 5px;
-    font-size: 30px;
-}
-
 img {
     height: 125px;
     width: 100px;
