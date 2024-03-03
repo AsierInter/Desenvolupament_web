@@ -76,6 +76,35 @@ nav ul li:hover {
     color: #fff;
 }
 
+/* CAIXETES */
+.content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.content .course-container {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: auto;
+    align-self: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    padding-top: 100px;
+    background: black;
+    border-radius: 15px;
+}
+
+.page-name {
+    color: #fff;
+}
+
+.course-container:hover {
+    background: #bd2929;
+}
 
 /* Footer */
 .container-footer {
