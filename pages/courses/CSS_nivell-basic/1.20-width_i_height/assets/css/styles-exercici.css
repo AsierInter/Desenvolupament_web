@@ -1,0 +1,27 @@
+body, a {
+   color: #fff;
+}
+
+body {
+    background-color: #333;
+}
+
+.block{
+    background-color: purple;
+}
+
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+}
+
+/* Posem un width de 100 px al block i mirem a veure que passa
+Posem 200 px i mirem a veure que passa
+Amb un height funciona igual, si li donem un height de 200 px
+ara el que tindrem és una caixa
+
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+}

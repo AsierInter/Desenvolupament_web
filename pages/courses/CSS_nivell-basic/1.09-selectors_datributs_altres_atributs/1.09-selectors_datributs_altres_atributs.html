@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/exercici.css">
@@ -15,85 +15,132 @@
 
     <h1>Selectors d'atributs: altres atributs en CSS</h1>
 
-    <p>-Ara tractarem els selectors d'atributs que no siguin ni id ni classes com per exemple href. Farem servir els claudàtors o claus quadrades en el full d'estils de CSS i posarem el nom de l'atribut a l'interior.
-    </p>
+    <p>Ara tractarem els selectors d'atributs que no siguin ni id ni classes com per exemple href. <a
+            href="https://www.w3schools.com/tags/ref_attributes.asp">Aquí</a> teniu una llista dels atributs actuals.
 
     <ol>
+        <li>
+            <h2>SELECTOR ATRIBUT</h2>
+        </li>
 
-    <li><h2>SELECTOR ATRIBUT</h2></li>
+        <p>
+            Farem servir els claudàtors o claus quadrades en el full d'estils de CSS i posarem el nom de l'atribut a
+            l'interior.
+        </p>
 
-    <pre>
-        [atribut]{
-        propietat: valor;
-        }
-    </pre>
+        <pre>
+          <code>
+            [atribut]{
+              propietat: valor;
+            }
+          </code>
+        </pre>
 
-    <pre>
-        [href]{
-        background-color: purple;
-        }
-    </pre>
+        <pre>
+          <code>
+            [href]{
+              background-color: purple;
+            }
+          </code>
+        </pre>
 
-    <p>- Tots els elements que tenen l'atribut href es posen de color coral en aquest cas.</p>
+        <p>
+            Tots els elements que tenen l'atribut href es posen de color coral en aquest cas.
+        </p>
 
-    <li><h2>SELECTOR ATRIBUT I VALOR EXACTE</h2></li>
+        <li>
+            <h2>SELECTOR ATRIBUT I VALOR EXACTE</h2>
+        </li>
 
-    <p>- Farem servir, entre claudàtors, el nom de l'atribut, signe igual i el seu valor entre cometes, com en l'exemple.</p>
+        <p>
+            Farem servir, entre claudàtors, el nom de l'atribut, signe igual i el seu valor entre cometes, com en l'exemple.
+        </p>
 
-    <pre>
+        <pre>
+          <code>
+            [href="https://google.com"]{
+              background-color: orangered;
+            }
+          </code>
+        </pre>
 
-        [href="https://google.com&quot;]{
-        background-color: orangered;
-        }
+        <li>
+            <h2>SELECTOR ATRIBUT I VALOR QUE COMENCI PER</h2>
+        </li>
 
-    </pre>
+        <p>
+            Farem servir, entre claudàtors, el nom de l'atribut, el signe del barretet chinès, el signe igual i el seu
+            valor, com en l'exemple.
+        </p>
 
-    <li><h2>SELECTOR ATRIBUT I VALOR QUE COMENCI PER</h2></li>
+        <pre>
+          <code>
+            [href^="color"]{
+              background-color: red;
+            }
+          </code>
+        </pre>
 
-    <p>- Farem servir, entre claudàtors, el nom de l'atribut, el signe del barretet chinès, el signe igual i el seu valor, com en l'exemple.</p>
+        <li>
+            <h2>SELECTOR ATRIBUT I QUE CONTENGUI UN CERT VALOR</h2>
+        </li>
 
-    <pre>
+        <p>
+            Farem servir, entre claudàtors, el nom de l'atribut, l'astèrix, el signe de igual i el seu valor, com en
+            l'exemple.
+        </p>
 
-        [href^="color"]{
-        background-color: red;
-        }
+        <pre>
+          <code>
+            [href*="modo"]{
+              background-color: green;
+            }
+          </code>
+        </pre>
 
-    </pre>
+        <li>
+            <h2>SELECTOR ATRIBUT I QUE ACABI AMB UN CERT VALOR</h2>
+        </li>
 
-    <li><h2>SELECTOR ATRIBUT I QUE CONTENGUI UN CERT VALOR</h2></li>
+        <p>
+            Farem servir, entre claudàtors, el nom de l'atribut, el signe dòlar, el signe de igual i el seu valor, com en
+            l'exemple.
+        </p>
 
-    <p>- Farem servir, entre claudàtors, el nom de l'atribut, l'astèrix, el signe de igual i el seu valor, com en l'exemple.</p>
+        <pre>
+          <code>
+            [href$="blau"]{
+              background-color: steelblue;
+            }
+          </code>
+        </pre>
 
-    <pre>
-        [href*="modo"]{
-        background-color: green;
-        }
-    </pre>
+        <li>
+            <h2>SELECTOR ATRIBUT I QUE COMENCI AMB UN CERT VALOR o UN CERT VALOR-</h2>
+        </li>
 
-    <li><h2>SELECTOR ATRIBUT I QUE ACABI AMB UN CERT VALOR</h2></li>
+        <p>
+            Farem servir, entre claudàtors, el nom de l'atribut, el signe barra vertical, el signe de igual i el seu valor,
+            com en l'exemple.
+        </p>
 
-    <p>- Farem servir, entre claudàtors, el nom de l'atribut, el signe dòlar, el signe de igual i el seu valor, com en l'exemple.</p>
+        <pre>
+          <code>
+            [href|=en]{
+              background-color: orangered;
+            }
+          </code>
+        </pre>
 
-    <pre>
-        [href$="blau"]{
-        background-color: steelblue;
-        }
-    </pre>
+        <p>
+            Selecciona en o en-
+        </p>
+    </ol>
 
-    <li><h2>SELECTOR ATRIBUT I QUE COMENCI AMB UN CERT VALOR o UN CERT VALOR-</h2></li>
-
-    <p>- Farem servir, entre claudàtors, el nom de l'atribut, el signe barra vertical, el signe de igual i el seu valor, com en l'exemple.</p>
-
-    <pre>
-        [href|=en]{
-        background-color: orangered;
-        }
-    </pre>
-
-    <p>- Selecciona en o en-</p>
-
-    <p>- En la<a href="https://developer.mozilla.org/es/docs/Web/CSS/Class_selectors&quot; target="_blank">documentació de MDNwebdocs</a> teniu més informació sobre els selectors de classe en CSS.</p>
-
-    <p><a href="/index.html">Anar a l'índex</a></p>
+    <p>
+        En la
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Class_selectors" target="_blank">documentació de
+            MDNwebdocs</a> teniu més informació sobre els selectors de classe en CSS.
+    </p>
 </body>
 </html>
