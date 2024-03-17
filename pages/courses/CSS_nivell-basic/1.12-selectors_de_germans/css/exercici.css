@@ -1,0 +1,16 @@
+/* intent d'exercici */
+
+/* div h2 {
+    background-color: coral;
+}
+
+div div h2 {
+
+    background-color: teal;
+} */
+
+/* correcció de l'exercici */
+div + h2 {
+    background-color: teal;
+}
+

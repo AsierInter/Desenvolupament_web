@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.9-InputCheckbox</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>INPUT DE TIPUS CHECKBOX</h1>
+<p>- Ens permeten contruir caselles de selecció</p>
+<form>
+    <label>Opció 1</label>
+    <input type="checkbox">
+</form>
+
+
+<form>
+    <h5>QUIN LLENGUATGE WEB CONTROLES?</h5>
+    <form>
+        <label>HTML 5</label>
+        <input type="checkbox" value="HTML 5">
+        <label>CSS 3</label>
+        <input type="checkbox" value="CSS 3">
+        <label>JavaScript</label>
+        <input type="checkbox" value="JavaScript">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h2>Atributs de checkbox</h2>
+
+<h2>Atributs booleans</h2>
+
+<h3>Autofocus</h3>
+<p>- Serveix per sugerir quina casella s'ha d'emplenar</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" autofocus>
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h3>Checked</h3>
+<p>- Serveix per emplenar automaticament una casella</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" checked>
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h3>Disabled</h3>
+<p>- Serveix per inhabilitar una casella</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" disabled>
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h3>Required</h3>
+<p>- Serveix per que sigui OBLIGATORI emplenar les caselles de selecció</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" required>
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h2>Atributs per controlar amb JavaScript</h2>
+<h3>Value</h3>
+<p>- Retorna al servidor la selecció emplenada</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera">
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h3>Form</h3>
+<p>- Serveix per...</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" form="exemple">
+        <label>Poma</label>
+        <input type="checkbox" value="Poma">
+        <label>Platan</label>
+        <input type="checkbox" value="Platan">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+<h3>Name</h3>
+<p>- Serveix per poder englobar els values, i així a JavaScript tindrem una referencia</p>
+<form>
+    <h5>QUINA/ES FRUITA/ES T'AGRADA/EN?</h5>
+    <form>
+        <label>Pera</label>
+        <input type="checkbox" value="Pera" name="languages">
+        <label>Poma</label>
+        <input type="checkbox" value="Poma" name="languages"
+        <label>Platan</label>
+        <input type="checkbox" value="Platan" name="languages">
+        <button>ENVIAR</button>
+    </form>
+</form>
+
+
+</body>
+</html>

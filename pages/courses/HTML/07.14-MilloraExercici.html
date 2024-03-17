@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.14-Exercici</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+
+<p><a href="index_courses_html.html">TORNAR L'INDEX</a></p>
+<body>
+
+    <form action="post">
+        <fieldset>
+            <legend>Completa aquest formulari amb les teves dades</legend>
+            <div>
+                <label for="name">Nom:</label> <input type="text" name="nom" id="name" required>
+                <label for="surname">Cognom:</label> <input type="text" name="cognom" id="surname" required>
+                <label for="adress">Adreça:</label> <input type="text" name="adreça" id="adress" required>
+            </div>
+            <div>
+                <label for="marital_status">Estat civil:</label> <input type="text" name="estat_civil"
+                    id="marital_status" value="solter/a">
+            </div>
+            <div>
+                <label for="birth_date">Data de naixement:</label>
+                <input type="date" name="data_naixement" id="birth_date">
+            </div>
+            <div>
+                <label for="email">Adreça electrònica:</label>
+                <input type="email" name="correu_electronic" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </div>
+            <div>
+                <label for="phone_number">Telèfon:</label>
+                <input type="tel" maxlength="9" name="telefon" id="phone_number" placeholder="Màxim nou xifres"
+                    required>
+            </div>
+            <div>
+                <label for="instagram">Compte d'instagram:</label>
+                <input type="text" name="compte_instagram" id="instagram" pattern="@[a-z0-9._%+\-]">
+                <label for="twitter">Compte de twitter:</label>
+                <input type="text" name="compte_twitter" id="twitter" pattern="@[a-z0-9._%+\-]">
+            </div>
+            <div>
+                <label for="field_place">Preferència de posició:</label>
+                <select name="posicio_de_camp" id="field_place">
+                    <optgroup>
+                        <option value="defensa_central">Defensa central</option>
+                        <option value="lateral">Lateral</option>
+                        <option value="migcamp">Migcampista</option>
+                        <option value="davanter centre">Davanter centre</option>
+                        <option value="extrem">Extrem</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="ID">Document d'identificació:</label>
+                <input type="file" name="identificacio" id="ID">
+            </div>
+            <div>
+                <label for="closet_color">Quin color vols pel teu armariet:</label>
+                <input type="color" name="color_armari" id="closet_color">
+            </div>
+            <div>
+                <label for="week_travel">Quina setmana voldries el viatge de final de temporada?</label>
+                <input type="week" name="setmana_viatge" id="week_travel">
+            </div>
+            <div>
+                <button>ENVIAR</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

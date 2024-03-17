@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.7-InputsExtra</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>INPUTS EXTRA</h1>
+
+<h2>Inputs de tipus color</h2>
+<p>- Ens permet triar un color en una paleta</p>
+<p>- Si es demana a l'usuari que seleccioni un color qualsevol per algun item, es <span style="color: yellowgreen;">UNA BONA OPCIÓ</span> </p>
+<h3>Exemple</h3>
+<form>
+    <label>Tria un color</label>
+    <input type="color">
+</form>
+<pre>
+    <code>
+    &lt;form&gt;
+        &lt;input type="color"&gt;
+    &lt;/form&gt;
+    </code>
+</pre>
+
+<h2>Inputs de tipus number</h2>
+<p>- Ens permet escollir un numero</p>
+<p>- <span style="color: red;">NO ES DEMANEN DATES</span> (ja hi ha altres inputs per demanar-ho)</p>
+<h3>Exemple</h3>
+<form>
+    <label>Tria un nombre</label>
+    <input type="number">
+</form>
+<pre>
+    <code>
+    &lt;form&gt;
+        &lt;input type="number"&gt;
+    &lt;/form&gt;
+    </code>
+</pre>
+
+<h2>Inputs de tipus range</h2>
+<p>- Ens permet escollir un grau de... (satisfacció)</p>
+<p>- Amb l'atribut <i>step</i> podem determinar fins a on es mou la barra (també mín i máx)</p>
+
+<h3>Exemple</h3>
+<h4>Sense atribut</h4>
+<form>
+    <label>Tria un rang</label>
+    <input type="range">
+</form>
+<pre>
+    <code>
+    &lt;form&gt;
+        &lt;input type="range"&gt;
+    &lt;/form&gt;
+    </code>
+</pre>
+
+<h4>Amb step</h4>
+<p>- Indica de quant en quant 'salta'. Si step="20", saltarà de 20 en 20 fins a 100</p>
+<form>
+    <label>Tria un rang</label>
+    <input type="range" step="20">
+</form>
+<pre>
+    <code>
+    &lt;form&gt;
+        &lt;input type="range" step="20"&gt;
+    &lt;/form&gt;
+    </code>
+</pre>
+
+<h4>Amb mín i máx</h4>
+<form>
+    <label>Tria un rang</label>
+    <input type="range" min="0" max="20" step="5">
+</form>
+<pre>
+    <code>
+    &lt;form&gt;
+        &lt;input type="range" min="0" max="20" step="5"&gt;
+    &lt;/form&gt;
+    </code>
+</pre>
+
+<h2>Inputs de tipus reset</h2>
+<p>- Permet resetejar la pàgina sense que ens envii el formulari, el contrari que un button</p>
+<p>- Amb l'atribut <i>step</i> podem determinar fins a on es mou la barra (també mín i máx)</p>
+
+<h3>Exemple</h3>
+<h4>Sense atribut</h4>
+<form>
+    <div>
+        <label>Nom
+            <input type="text">
+    </div>
+
+    <div>
+        <label>Primer cognom</label>
+        <input type="text">
+    </div>
+    <div><label>Segon cognom</label>
+    <input type="text">
+    </div>
+    <div><input type="reset"> <button value="enviar">Enviar</button></div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.8-EtiquetaPicture</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>Etiqueta picture</h1>
+<p>- Funciona de manera molt similar a l'atribut <i>srcset</i> de l'etiqueta <i>img</i>, però ens permet controlar moltes més opcions</p>
+
+<h2>Etiques i atributs</h2>
+
+<h3>Etiqueta picture</h3>
+<p>- És l'etiqueta per obrir i tancar l'element</p>
+<pre>
+    <code>
+        &lt;picture>&lt;/picture>
+    </code>
+</pre>
+
+<h3>Etiqueta source</h3>
+<p>- Podem posar el srcset que teniem abans</p>
+<pre>
+    <code>
+        &lt;picture>
+            &lt;source srcset="">
+        &lt;/picture>
+    </code>
+</pre>
+
+<h3>Etiqueta img</h3>
+<p>- L'etiqueta picture no funcionarà fins que no tingui un pla B (fallback)</p>
+<p>- Aquest pla B es l'etiqueta img, i <span style="color: red;">ÉS OBLIGATORI!!!</span></p>
+
+<picture>
+    <source src="/assets/images/dog.webp">
+    <img src="/assets/images/dog.jpeg" alt="imatge alternativa">
+</picture>
+<pre>
+    <code>
+        &lt;picture>
+            &lt;source src="/assets/images/dog.webp">
+            &lt;img src="/assets/images/dog.jpeg" alt="imatge alternativa">
+        &lt;/picture>
+    </code>
+</pre>
+
+<h3>Atribut media</h3>
+<p>- Permet definir una consulta de mitjans (media query), per especificar quan s'ha de fer servir una imatge en particular</p>
+
+<picture>
+    <source media="(800px)" src="assets/images/683px-647px.png">
+    <source media="(400px)" src="assets/images/cloud-moon.svg">
+    <img src="assets/images/616px-187px.png" alt="Aquesta és una imatge petita">
+</picture>
+<pre>
+    <code>
+            &lt;picture>
+                &lt;source media="(800px)" src="assets/images/683px-647px.png">
+                &lt;source media="(400px)" src="assets/images/cloud-moon.svg">
+                &lt;img src="assets/images/616px-187px.png" alt="Aquesta és una imatge petita">
+            &lt;/picture>
+    </code>
+</pre>
+
+<h2>UTILITZACIÓ</h2>
+<p>Actualment--> picture > img</p>
+
+<h2>EXEMPLE</h2>
+
+<picture>
+    <source src="assets/images/dog.webp" media="(min-width: 800px)" alt="Primer gos">
+    <source src="assets/images/homer.gif" media="(min-width: 400px)" alt="Homer amagant-se">
+    <img src="assets/images/dog.jpeg" alt="Segon gos">
+</picture>
+
+<pre>
+    <code>
+        &lt;picture>
+            &lt;source src="assets/images/dog.webp" media="(min-width: 800px)" alt="Primer gos">
+            &lt;source src="assets/images/homer.gif" media="(min-width: 400px)" alt="Homer amagant-se">
+            &lt;img src="assets/images/dog.jpeg" alt="Segon gos">
+        &lt;/picture>
+    </code>
+</pre>
+</body>
+</html>

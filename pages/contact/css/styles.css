@@ -1,0 +1,157 @@
+/* Ajustaments generals */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.item {
+    float: left;
+}
+
+#item_1 {
+    float: left;
+}
+
+#item_2 {
+    float: right;
+}
+
+/* Header*/
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #bd2929;
+}
+
+/* Logo i informació de la pàgina */
+.logo {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+    height: 60px;
+}
+
+.logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+.site-name {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+/* FORMULARI */
+
+.father-form {
+    position: relative;
+}
+
+.form {
+    position: absolute;
+    left: 30%;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+    margin: 70px 30px 30px 30px;
+    width: 420px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 7px 15px 40px black;
+    background: linear-gradient(#800000, #8b0000, #b22222, #cd5c5c, #a52a2a, #dc143c, #e9967a);
+}
+.form h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.input-user {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-user input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(44, 43, 43, 0.3);
+    color: #fff;
+    padding: 20px, 45px, 20px, 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(44, 43, 43, 0.3);
+    color: #fff;
+    padding: 20px, 45px, 20px, 20px;
+    font-size: 15px;
+}
+
+.message::placeholder {
+    color: #fff;
+}
+
+.button {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+}

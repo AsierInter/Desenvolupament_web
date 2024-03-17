@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.10-EtiquetaSelect</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+<h1>SELECT</h1>
+
+<h2>Element html SELECT BÀSIC</h2>
+<p>- Serveix per seleccionar mésd'un item a una llista d'opcions</p>
+<form>
+    <div><select name="" id=""></select></div>
+    <div><button>ENVIA</button></div>
+
+</form>
+
+<h2>Etiqueta OPTION</h2>
+<p>- Cada etiqueta option afegeix un nou item per poder seleccionar al menú desplegable.</p>
+<p>- Select porta -> els atributs <i>name</i> i <i>option</i>, i l'etiqueta <i>option</i>  </p>
+<p><span style="color: yellowgreen;">El <i>select</i> porta un name general que s'atribuira també al label, i els <i>options</i> porten diferents per cada item</span></p>
+<form>
+    <div><label for="languages">Tria els llenguatges web que més controlis</label></div>
+    <div><select name="llenguatges" id="languages">
+        <option value="html_5">HTML 5</option>
+        <option value="css_3">CSS 3</option>
+        <option value="javascript">JavaScript</option>
+        </select>
+    </div>
+    <div><button>ENVIA</button></div>
+</form>
+
+<h3>- Atribut multiple</h3>
+<p>- Atribut booleà que es troba dins del <i>select</i>, i ens permet seleccionar varies opcions clicant <span style="color: red;">Ctrl</span>.</p>
+<form>
+    <div><label for="languages">Tria els llenguatges web que més controlis</label></div>
+    <div>
+        <select name="llenguatges" id="languages" multiple>
+            <option value="html_5">HTML 5</option>
+            <option value="css_3">CSS 3</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </div>
+    <div><button>ENVIA</button></div>
+</form>
+
+<h2>Element html SELECT AVANÇAT</h2>
+<p>- Podem ordenar els elements que farem escollir a l'usuari</p>
+<p>- L'atribut <i>checked</i> <span style="color: red;">NO FUNCIONA</span></p>
+<form>
+    <div>
+        <label>Selecciona el teu animal preferit (pots seleccionar diversos amb Ctrl)</label>
+        <select name="pets" multiple>
+            <optgroup label="Ocells">
+                <option value="pardal">pardal</option>
+                <option value="cadernera">cadernera</option>
+            </optgroup>
+            <optgroup label="Rèptils">
+                <option value="cocodril">cocodril</option>
+                <option value="serp">serp</option>
+                <option value="tortuga">tortuga</option>
+                <option value="iguana">iguana</option>
+            </optgroup>
+            <optgroup label="Mamífers">
+                <option value="bufal">bufal</option>
+                <option value="lleo">lleo</option>
+                <option value="guineu">guineu</option>
+                <option value="rinoceront">rinoceront</option>
+            </optgroup>
+        </select>
+    </div>
+    <div><button>ENVIA</button></div>
+</form>
+
+
+</body>
+</html>

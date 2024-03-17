@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.14-EnviamentGetVSPost</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>ENVIAMENT METODE GET VS POST</h1>
+
+<h2>METODE GET</h2>
+<p>- És el mètode d'entrada a pàgines web quan nosaltres hi entrem a través d'una url</p>
+<p>- Porta l'atribut <i>action</i>-> enviar.html</p>
+<p>- Porta l'atribut <i>method</i>-> get</p>
+
+<h3>Sense atribut name</h3>
+<pre>
+    <code>
+        &lt;form action="enviar.html" method="get">
+            &lt;div>
+                &lt;label for="name">Nom&lt;/label>
+                &lt;input type="text" id="name">
+            &lt;/div>
+            &lt;div>
+                &lt;label for="surname">Cognom&lt;/label>
+                &lt;input type="text" id="Surname">
+            &lt;/div>
+            &lt;div>
+                &lt;input type="submit">
+            &lt;/div>
+        &lt;/form>
+    </code>
+</pre>
+
+<form action="enviar.html" method="get">
+    <div>
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <label for="surname">Cognom</label>
+        <input type="text" id="Surname">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<p><b>RESULTAT</b>: <i>Cannot GET /enviar.html</i></p>
+<p>- Pel fet que si no s'insereix un document que existeixi, donarà error</p>
+<p>- Malgrat posem el nom i cognom als camps, res no s'envia perquè en la url després del ? no hi ha cap informació</p>
+<p><b>RESULTAT DE LA URL</b>: http://127.0.0.1:5500/enviar.html?</p>
+
+
+<h3>Amb atribut name</h3>
+<pre>
+    <code>
+        &lt;form action="enviar.html" method="get">
+            &lt;div>
+                &lt;label for="name">Nom&lt;/label>
+                &lt;input type="text" id="name" name="name">
+            &lt;/div>
+            &lt;div>
+                &lt;label for="surname">Cognom&lt;/label>
+                &lt;input type="text" id="Surname" name="surname">
+            &lt;/div>
+            &lt;div>
+                &lt;input type="submit">
+            &lt;/div>
+        &lt;/form>
+    </code>
+</pre>
+
+<form action="enviar.html" method="get">
+    <div>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="surname">Cognom</label>
+        <input type="text" id="Surname" name="surname">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<p><b>RESULTAT</b>: <i>Cannot GET /enviar.html</i></p>
+<p>- Pel fet que si no s'insereix un document que existeixi, donarà error</p>
+<p>- Ara, <span style="color: green;">SI</span> que s'envien dades al servidor, però com no hi ha cap document PHP anomenat <i>enviar.html</i> no es pot enviar</p>
+<p><b>RESULTAT DE LA URL</b>: http://127.0.0.1:5500/enviar.html?name=Asier&surname=P%C3%A1rraga</p>
+
+
+
+<h2>METODE POST</h2>
+<p>- Enviament de formulari per la porta de darrera.</p>
+<p>- L'Error 405 que surt, significa que ha intentat enviar les dades, pero aquestes dades no han arribat al destí</p>
+<p>- Porta l'atribut <i>action</i>-> enviar.html</p>
+<p>- Porta l'atribut <i>method</i>-> post</p>
+<p>- <span style="color: red;">NO INFLUEIX EN RÉS</span> que porti l'atribut <i>name</i>, però es una <span style="color: gold;">BONA PRAXIS</spans></p>
+<p>- És més segur que el <i>get</i></p>
+
+<h3>Amb atribut name</h3>
+<pre>
+    <code>
+        &lt;form action="enviar.html" method="post">
+            &lt;div>
+                &lt;label for="name">Nom&lt;/label>
+                &lt;input type="text" id="name" name="name">
+            &lt;/div>
+            &lt;div>
+                &lt;label for="surname">Cognom&lt;/label>
+                &lt;input type="text" id="Surname" name="surname">
+            &lt;/div>
+            &lt;div>
+                &lt;input type="submit">
+            &lt;/div>
+        &lt;/form>
+    </code>
+</pre>
+
+<form action="enviar.html" method="post">
+    <div>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="surname">Cognom</label>
+        <input type="text" id="Surname" name="surname">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<p><b>RESULTAT</b>: <i>HTTP ERROR 405</i></p>
+<p><b>RESULTAT DE LA URL</b>: http://127.0.0.1:5500/enviar.html</p>
+
+<ol><b>--PASSOS PER VEURE DELS TEVES DADES--</b>
+    <li>Inspecciona l'error</li>
+    <li>Tira enrere</li>
+    <li>Torna a enviar les dades</li>
+    <li>Ves a <i>Network</i></li>
+    <li>Clica a <i>enviar.html</i></li>
+    <li>Ves a <i>Payload</i></li>
+    <li>Observa les teves dades</li>
+</ol>
+<p>- Si no afegim <i>name</i>, el Payload no existirà</p>
+
+
+</body>
+</html>

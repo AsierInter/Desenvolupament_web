@@ -1,0 +1,29 @@
+
+h1.title#title {
+    background-color: coral;
+}
+
+h1 {
+    background-color: red;
+}
+
+.title {
+    background-color: blue;
+}
+
+#title {
+    background-color: green;
+}
+
+h1.title {
+    background-color: yellow;
+}
+
+h1#title {
+    background-color: thistle;
+}
+
+/* No fer això mai!!!!
+.title {
+    background-color: blue !important;
+} */

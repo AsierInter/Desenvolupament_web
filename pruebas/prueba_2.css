@@ -1,0 +1,64 @@
+.container-footer {
+    width: 100px;
+    padding: 40px 0;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 20px;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.github-icon:hover {
+    background-color: grey;
+}
+.discord-icon:hover {
+    background-color: rgb(88, 101, 242);
+}
+.mail-icon:hover {
+    background-color: rgb(235, 74, 40);
+}
+.twitter-icon:hover {
+    background-color: grey;
+}
+.instagram-icon:hover {
+    background: linear-gradient(#FCDE30, #E9712A, #D2313B, #AE4198, #754BA1, #5443AB);
+}
+
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+}
+
+.container-footer footer h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+}

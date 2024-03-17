@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-Links</title>
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <p> <a href="index_courses_html.html">TORNA A L'INDEX</a></p>
+<h1>04-Links</h1>
+<p>- Els hiperlinks serveixen per poder enllaçar amb págines web o altres documents del nostre WORKSPACE</p>
+<p>- La sintaxis es <b>< a href="ENLLAÇ" >Text_de_referencia< a/></b></p>
+<p>- Per linkar a una pàgina exterior d'aquesta carpeta, fem servir <b>< a href="/ENLLAÇ">Text_de_referencia< /a></b></p>
+<p>- Si al "target" no fiquem res, serà com posar "self"(serveix per quan accedim a un enllaç, s'obri a una altre pestanya)</p>
+
+<h2>RUTA ABSOLUTA</h2>
+<p>- Són 'rutes' per enllaçar amb pàgines externes al nostre codi</p>
+<p>- Han de portar l'atribut https</p>
+<p><a href="https://www.google.com">Anar a Google</a></p>
+
+<h2>RUTA RELATIVA</h2>
+<p>- Són 'rutes' per enllaçar amb pàgines del nostre codi</p>
+<p><a href="01-PrimersPassos.html" target=_blank>Anar a primers passos</a></p>
+
+<h3>Rutes relatives a l'arrel</h3>
+<p>- Per enllaçar amb una carpeta de nivell superior, podem anclarlo amb ../ o podem optar per
+    / . El que farà que el programa hagi d'anar a la carpeta de nivell més alt</p>
+
+
+<h3>Atribut download</h3>
+<p>- Per fer servir aquest atribut, tindrem la carpeta "assets", que ens farà de 'nucli' per les imatges i arxius externs a la web, i així podrem fer-lo servir i si no tenim l'imatge a la carpeta, no podrem fer-la servir</p>
+<p>- Per accedir a l'imatge, només haurem de fiquar un "href" com les altres vegades que enllaçacem</p>
+<p>- I per descarregar l'imatge afegirem l'atribut "download", que es un 'boolean'</p>
+<p>- Si a l'atribut download afegim alguna cosa entre les cometes, li cambiarà el nom a l'arxiu pel que estugui en les cometes</p>
+<p><a href="/assets/dog.jpeg">Veure imatge d'un gos</a></p>
+<p><a href="/assets/dog.jpeg" download>Descargar imatge d'un gos</a></p>
+<p><a href="/01-PrimersPassos.html" download>Descargar arxiu html</a></p>
+</body>
+</html>
+

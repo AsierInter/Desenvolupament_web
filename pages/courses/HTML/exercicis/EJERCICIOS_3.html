@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS_3</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+    <style>
+        .planet{color: brown;}
+    </style>
+</head>
+<body>
+        <p><a href="index_exercicis.html">ANAR A L'INDEX D'EXERCICIS</a></p>
+<h1>EJERCICIOS_3</h1>
+
+<ol>
+    <li><a href="#ej_1">EJERCICIO 1</a></li>
+    <li><a href="#ej_2">EJERCICIO 2</a></li>
+    <li><a href="#ej_3">EJERCICIO 3</a></li>
+    <li><a href="#ej_4">EJERCICIO 4</a></li>
+    <li><a href="#ej_5">EJERCICIO 5</a></li>
+    <li><a href="#ej_6">EJERCICIO 6</a></li>
+    <li><a href="#ej_7">EJERCICIO 7</a></li>
+    <li><a href="#ej_8">EJERCICIO 8</a></li>
+    <li><a href="#ej_9">EJERCICIO 9</a></li>
+</ol>
+
+<h1 id="ej_1">EJERCICIO 1</h1>
+
+<form action="">
+    <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        <div>
+            <label>Elija una fecha:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">Elija un fichero:</label>
+            <input type="file">
+        </div>
+        <div>
+            <input type="radio"> <label for="">AMD</label>
+            <input type="radio"> <label for="">INTEL i5</label>
+            <input type="radio"> <label for="">INTEL i7</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Indique su preferencias por favor</legend>
+        <div>
+            <input type="radio"> <label for="">MACS</label>
+            <input type="radio"> <label for="">HISTORIA</label>
+            <input type="radio"> <label for="">GEO</label>
+            <input type="radio"> <label for="">FÍSICA</label>
+        </div>
+        <div>
+            <label for="">Nombre</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Apellido</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Dirección</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Correo electronico</label>
+            <input type="email">
+        </div>
+
+        <div>
+            <label for="">Elija un color:</label>
+            <input type="color">
+        </div>
+        <div>
+            <textarea name="textarea_1" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="">Elija una fecha:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="list_languajes">Seleccione un idioma:</label>
+            <select id="languaje">
+                <optgroup>
+                    <option value="eng">Inglés</option>
+                    <option value="cat">Catalán</option>
+                    <option value="sp">Castellano</option>
+                    <option value="ger">Alemán</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="">Elija una hora:</label>
+            <input type="datetime-local">
+        </div>
+        <div>
+            <label for="">Elija un fichero:</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">Indique su género:</label>
+            <input type="checkbox"> <label for="">Hombre</label>
+            <input type="checkbox"> <label for="">Mujer</label>
+        </div>
+        <div><button>ENVIAR </button></div>
+    </fieldset>
+</form>
+
+
+<h1 id="ej_2">EJERCICIO 2</h1>
+
+<form action="">
+    <fieldset>
+        <legend>Opciones</legend>
+        <div>
+            <label for="">Elije un fichero:</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">Elija un color:</label>
+            <input type="color">
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="">Automóvil</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="">Moto</label>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label for="">Autobús</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Completar estas opciones</legend>
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Lengua</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Matemáticas</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Historia</label>
+            <input type="checkbox" name="" id="">
+            <label for="">Geografía</label>
+        </div>
+        <div>
+            <label for="">DNI</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Nombre</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Apellidos</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Telefono</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Escriba texto en este marco:</label>
+            <textarea name="texto" id="" cols="20" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="">Elija una hora:</label>
+            <input type="time">
+        </div>
+    </fieldset>
+</form>
+
+<h1 id="ej_3">EJERCICIO 3</h1>
+
+<table border="2">
+    <tr>
+        <td>A</td>
+        <td colspan="2">B</td>
+    </tr>
+    <tr>
+        <td rowspan="5">C</td>
+    </tr>
+    <tr>
+        <td>D1</td>
+    </tr>
+    <tr>
+        <td>D2</td>
+    </tr>
+    <tr>
+        <td>D3</td>
+    </tr>
+    <tr>
+        <td>D4</td>
+    </tr>
+</table>
+
+
+
+<h1 id="ej_4">EJERCICIO 4</h1>
+
+<table border="2">
+    <tr>
+        <td colspan="4">A</td>
+    </tr>
+    <tr>
+        <td>B1</td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td>B2</td>
+        <td>C1</td>
+        <td>C2</td>
+    </tr>
+    <tr>
+        <td>B3</td>
+        <td colspan="2"></td>
+    </tr>
+</table>
+
+<h1 id="ej_5">EJERCICIO 5</h1>
+
+<table border="1">
+    <thead>Horario del curso</thead>
+    <tr>
+        <td><b>HORAS</b></td>
+        <td><b>LUNES</b></td>
+        <td><b>MARTES</b></td>
+        <td><b>MIÉRCOLES</b></td>
+        <td><b>JUEVES</b></td>
+        <td><b>VIERNES</b></td>
+    </tr>
+    <tr>
+        <td>8:00-8:50</td>
+        <td>Física</td>
+        <td>Historia</td>
+        <td>Ed. Física</td>
+        <td>Química</td>
+        <td>Dibujo</td>
+    </tr>
+    <tr>
+        <td>8:50-9:40</td>
+        <td>Historia</td>
+        <td>Matematicas</td>
+        <td>Lengua</td>
+        <td>Sociales</td>
+        <td>Naturales</td>
+    </tr>
+    <tr>
+        <td>9:40-10:30</td>
+        <td>Dibujo</td>
+        <td>Historia</td>
+        <td>Dibujo</td>
+        <td>Ed. Física</td>
+        <td>Sociales</td>
+    </tr>
+    <tr>
+        <td>10:30-10:45</td>
+        <td colspan="5" align="center"><b>RECREO</b></td>
+    </tr>
+    <tr>
+        <td>10:45-11:35</td>
+        <td>Naturales</td>
+        <td>Ingles</td>
+        <td>Lengua</td>
+        <td>Musica</td>
+        <td>Fisica</td>
+    </tr>
+    <tr>
+        <td>11:35-12:25</td>
+        <td>Historia</td>
+        <td>Quimica</td>
+        <td>Sociales</td>
+        <td>Matematicas</td>
+        <td>Filosofia</td>
+    </tr>
+    <tr>
+        <td>12.25-13:15</td>
+        <td>Filosofia</td>
+        <td>Fisica</td>
+        <td>Quimica</td>
+        <td>Dibujo</td>
+        <td>Ingles</td>
+    </tr>
+</table>
+
+<h1 id="ej_6">EJERCICIO 6</h1>
+
+<table border="1" align="center">
+    <caption>El sistema solar</caption>
+    <thead>
+        <tr>
+            <td><b>PLANETA</b></td>
+            <td><b>MASA</b></td>
+            <td><b>DISTANCIA AL SOL</b></td>
+        </tr>
+    </thead>
+    <tr>
+        <td class="planet">Mercurio</td>
+        <td align="center">0.06</td>
+        <td align="center">57.910.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Venus</td>
+        <td align="center">0.82</td>
+        <td align="center">108.200.000</td>
+    </tr>
+    <tr>
+        <td class="planet">La Tierra</td>
+        <td align="center">1.00</td>
+        <td align="center">146.600.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Marte</td>
+        <td align="center">0.11</td>
+        <td align="center">227.940.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Júpiter</td>
+        <td align="center">318</td>
+        <td align="center">778.330.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Saturno</td>
+        <td align="center">95.1</td>
+        <td align="center">1.429.400.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Urano</td>
+        <td align="center">14.6</td>
+        <td align="center">2.870.990.000</td>
+    </tr>
+    <tr>
+        <td class="planet">Neptuno</td>
+        <td align="center">17.2</td>
+        <td align="center">4.504.300.000</td>
+    </tr>
+</table>
+
+<h1 id="ej_7">EJERCICIO 7</h1>
+
+<form action="">
+    <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+        <div>
+            <label for="">Elija una fecha:</label>
+            <input type="datetime">
+        </div>
+        <div>
+            <label for="">Elija un sexo:</label>
+            <input type="radio"> <label for="">Hombre</label>
+            <input type="radio"> <label for="">Mujer</label>
+            <input type="radio"> <label for="">Otro</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <div>
+            <label for="">Instituto:</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            Preferencias en asignatura:
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Física</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Geología</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Tecnología</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Filología castellana</label>
+        </div>
+        <div>
+            Preferencias de lenguaje para programar:
+        </div>
+        <div>
+            <input type="radio" name="" id="">
+            <label for="">HTML5</label>
+        </div>
+        <div>
+            <input type="radio" name="" id="">
+            <label for="">JavaScript</label>
+        </div>
+        <div>
+            <input type="radio" name="" id="">
+            <label for="">Python</label>
+        </div>
+        <div>
+            <input type="radio" name="" id="">
+            <label for="">Ruby</label>
+        </div>
+        <div>
+            <label for="">Seleccione un editor de codigo:</label>
+            <select name="" id="">
+                <optgroup>
+                    <option value="">Visual Studio Code</option>
+                    <option value="">Terminal de tu sistema operativo</option>
+                    <option value="">Documento word</option>
+                    <option value="">Bloc de notas</option>
+                </optgroup>
+            </select>
+        </div>
+    </fieldset>
+    <div><button>ENVIAR</button></div>
+</form>
+
+
+<h1 id="ej_8">EJERCICIO 8</h1>
+
+<table border="1">
+    <tr>
+        <td>Celda</td>
+        <td colspan="4">Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+    </tr>
+    <tr>
+        <td>Celda</td>
+        <td colspan="4">Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td rowspan="3">Celda</td>
+        <td rowspan="3">Celda</td>
+    </tr>
+    <tr>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+    </tr>
+    <tr>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+        <td>Celda</td>
+    </tr>
+</table>
+
+<h1 id="ej_9">EJERCICIO 9</h1>
+
+
+</body>
+</html>

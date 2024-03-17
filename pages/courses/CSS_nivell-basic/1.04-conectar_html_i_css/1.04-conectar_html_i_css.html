@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+        <!-- <style>
+            body {
+                background-color: color-mix(in srgb, red 20%, black 40%)
+            }
+        </style> -->
+
+    <title>1.04-conectar_html_i_css</title>
+</head>
+<body>
+    <p><a href="../index_courses_css_basic.html.html">Anar a l'índex</a></p>
+
+<h1>Conectar HTML i CSS</h1>
+<p>- Les cuatre maneres per conectar html i css són les seguents:</p>
+<ol>
+    <li>Document style assignat</li>
+    <li>Utilitzar l'etiqueta style al head</li>
+    <li>Utilitzar l'atribut style als elements html</li>
+    <li>Utilitzar l'etiqueta import</li>
+</ol>
+
+<h2>1.Document style assignat</h2>
+<p>- Linkem al head de cada document al seu respectiu document CSS, que estarà dins d'una carpeta a la mateixa del document</p>
+<pre>
+    <code>
+            &lt;link rel="stylesheet" href="./css/styles.css">
+    </code>
+</pre>
+
+<h2>2. Etiqueta &lt;style> dins del head</h2>
+<p>- Dins de l'etiqueta style tindrem tot el nostre codi CSS</p>
+<p>- Si ho fessim així, TOTS els nostres html haurien de tenir aquest codi CSS</p>
+<p>- Així i tot, es recomana tenir coherencia entre els arxius de la nostra web, per així no confondre a cap integrant de l'equip o a nosaltres mateixos.</p>
+<pre>
+    <code>
+        &lt;head>
+            &lt;style>
+                body {
+                    background-color: color-mix(in srgb, red 20%, black 40%)
+                }
+            &lt;/style>
+        &lt;/head>
+    </code>
+</pre>
+
+<h2>3. Utilitzar l'atribut style als elements html</h2>
+<p>- Això és una <span style="color: red;">MALA PRAXIS</span>, no es recomana gens fer-ho</p>
+<p>- Als diferents elements html podem donar-li estils</p>
+<p>- Només es pot utilitzar quan tenim JavaScript per ajudar-nos a editar el nostre document</p>
+
+<pre>
+    <code>
+        &lt;h2 style="color: red;">MALA PRAXIS</h2>
+    </code>
+</pre>
+
+<h2>4. Utilitzar la regla @import</h2>
+<p>- Afegim una regla import a l'etiqueta style</p>
+<p>- Això en html equival al link de la primera opció</p>
+<p>- <span style="color: red;">No es recomana gens alhora de fer la nostra pàgina web</span>, pel fet que els documents html i CSS carreguen de manera asincrona, i si afegim la regla import, al principi trigarà a carregar una mica i després es mostraran els estils (dona molt mala impatge a la nostra pàgina web)</p>
+<pre>
+    <code>
+        &lt;head>
+            &lt;style>
+                @import url(css/styles.css);
+            &lt;/style>
+        &lt;/head>
+    </code>
+</pre>
+
+
+</body>
+</html>

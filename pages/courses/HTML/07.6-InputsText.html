@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.6.-InputsText</title>
+    <link rel="icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<p><a href="index_courses_html.html">ANAR A L'INDEX</a></p>
+
+<h1>INPUTS AMB TEXT</h1>
+<h2>Tipus text</h2>
+<p>- L'input per defecte</p>
+
+<h3>Atributs habituals</h3>
+<p>-Es fan servir els seguents atributs</p>
+<ul><li><h4>name</h4></li></ul>
+<p>- Serveix per dir-li al servidor amb quin tipus de dades estem treballant, si no s'esmenta aquest tipus de dades, el servidor no sap que fer</p>
+<form>
+    <div>
+        <label>Nom</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label>Cognom</label>
+        <input type="text" name="surname">
+    </div>
+</form>
+
+<ul><li><h4>max-lenght</h4></li></ul>
+<p>- Es útil per posar un màxim de caràcters que es podem posar a l'input</p>
+<form>
+    <div>
+        <label>Password</label>
+        <input type="text" maxlength="10">
+    </div>
+</form>
+
+<ul><li><h4>size</h4></li></ul>
+<p>- Seveix per poder modificar la mida de la caixa de <i>l'input</i></p>
+<form>
+    <div><label for="soda_type">Quin tipus de refresc t'agrada?</label>
+    <input type="text" name="soda_type" id="" maxlength="10" size="15"></div>
+</form>
+
+<ul><li><h4>value</h4></li></ul>
+<p>- Seveix per assignar un valor per defecte a <i>l'input</i></p>
+<form>
+    <div>
+        <label>Insereix el teu usuari:</label>
+        <input type="text" id="" maxlength="10" size="15" value="asierparraga@gmail.com">
+    </div>
+</form>
+
+<ul><li><h4>placeholder</h4></li></ul>
+<p>- Seveix per indicar a l'usuari quin valor s'espera que insereixi a <i>l'input</i></p>
+<form>
+    <div><label>Insereix el teu usuari:</label></div>
+    <div><input type="text" id="" size="15" placeholder="@gmail.com"></div>
+    <div><button>Enviar</button></div>
+    <div><label>Insereix la teva contrasenya:</label></div>
+    <div><input type="email" id="" maxlength="10" size="15" placeholder="Màxim 10 xifres"></div>
+    <div><button>Enviar</button></div>
+</form>
+
+<ul><li><h4>pattern</h4></li></ul>
+<p>- Va acompanyat d'una expressió regular o <b>regex.</b></p>
+<p>- Impedeix modificar el valor de l'input (gràcies a l'expressió regular)</p>
+<p>- Es pot posar com <b>[123456789]</b> o <b>[1-9]</b></p>
+<p>- El símbol <b>{}</b> serveix per as4789signar quants valor hauràn d'estar entre aquest "rang" que assignem amb la <b>regex.</b></p>
+<p>Normalment <span style="color: red;">NO DEIXA ENVIAR-HO</span>, però <span style="color: rgb(158, 139, 29)">JavaScript</span> és més estricte, i <span style="color: red;">NO DEIXA FER-HO</span></p>
+<form>
+    <div><label>Insereix el teu any de naixement:</label></div>
+    <div><input type="text"  maxlength="4" id="" size="15" pattern="^[1-2][0-9]{3}$" placeholder="4 xifres MÀX"> </div>
+    <div><button>Enviar</button></div>
+</form>
+
+<ul><li><h4>required</h4></li></ul>
+<p>- És un valor booleà que fa que la casella s'hagi d'omplir <span style="color: green;">SI O SI</span></p>
+<p>- <b>NORMA NO ESCRITA:</b> per conveniència, es posa un asterisc (*) al <i>label</i></p>
+<p><a href="https://docs.google.com/forms/d/117xQgaYqSZzAlPiRe4UnjzSKHzTbW-fcMaFFDCtKct4/edit" target="_blank">Exemple de Google forms</a></p>
+<form>
+    <div><label>Insereix el teu any de naixement <span style="color: red;">*</span>:</label></div>
+    <div><input type="text" id="" size="15" required> </div>
+    <div><button>Enviar</button></div>
+</form>
+
+
+
+</body>
+</html>
