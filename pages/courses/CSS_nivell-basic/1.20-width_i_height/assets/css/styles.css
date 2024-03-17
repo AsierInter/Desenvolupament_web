@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* Posem un width de 100 px al block i mirem a veure que passa
@@ -9,4 +10,17 @@ ara el que tindrem és una caixa
     background-color: purple;
     width: 200px;
     height: 200px;
+=======
+
+
+/* Posem un width de 100 px al block i mirem a veure que passa
+Posem 200 px i mirem a veure que passa
+Amb un height funciona igual, si li donem un height de 200 px
+ara el que tindrem és una caixa
+
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+>>>>>>> d09512015a3dce4ae254158400305bf92d33a001
 }

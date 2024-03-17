@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Els comentaris en CSS es posen amb CTRL+} */
 
 /* TIPUS DE SELECTORS */
@@ -27,3 +28,34 @@
             Selector de fill directe > -> Selecciona NOMÉS als fills directes
 */
 
+=======
+/* Els comentaris en CSS es posen amb CTRL+} */
+
+/* TIPUS DE SELECTORS */
+
+/* 
+    Selectors simples
+        Selectores elementals
+            Selector universal -> *
+            Selector de tipus o etiqueta -> Nom de l'etiqueta
+        Selectors d'atribut
+            id -> id de l'element
+            classe -> classe de l'element
+            altres atributs
+                [atribut]->Selecciona els elements amb aquell atribut
+                [atribut=valor]->Selecciona els elements que coincideixen amb el atribut=valor
+                [atribut^=valor]-> Selecciona els elements que el seu atribut comença amb el valor
+                [atribut*=valor]-> Selecciona els elements que el seu atribut  contengui el valor
+                [atribut$=valor]-> Selecciona els elements que el seu atribut acabi amb el valor
+                [atribut|=valor]-> Selecciona els elements que el seu atribut comenci amb valor o valor-
+                
+    Selectores Compostos
+        Selectors agrupats -> S'agrupen els selectors separats por comes i s'escriu l'estil un sol cop. 
+        Selectors combinadors
+            Selector descendent -> Selecciona un elemento dentro de otro
+            Selector de germà següent + -> Selecciona al germà següent adjacent 
+            Selector de germans següents ~ -> Selecciona a tots els germans següents
+            Selector de fill directe > -> Selecciona NOMÉS als fills directes
+*/
+
+>>>>>>> d09512015a3dce4ae254158400305bf92d33a001

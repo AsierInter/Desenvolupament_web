@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Els comentaris en CSS es posen amb CTRL+} */
 
 
@@ -21,3 +22,28 @@ h2 {
 
 /* Per especificitat, la classe, té més que l'element i que la descendència:
                     h2 < div h2 < .title-2 */
+=======
+/* Els comentaris en CSS es posen amb CTRL+} */
+
+
+/* Selector descendent */
+div h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+
+}
+
+/* Selector */
+h2 {
+    background-color: aqua;
+}
+
+/* Selector de classe */
+.title-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: green;
+}
+
+/* Per especificitat, la classe, té més que l'element i que la descendència:
+                    h2 < div h2 < .title-2 */
+>>>>>>> d09512015a3dce4ae254158400305bf92d33a001

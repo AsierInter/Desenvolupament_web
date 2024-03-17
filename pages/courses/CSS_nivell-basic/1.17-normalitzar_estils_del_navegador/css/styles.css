@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Els comentaris en CSS es posen amb CTRL+} */
 
 /* ¿COM FUNCIONA CSS?
@@ -41,4 +42,49 @@ Herència -> És la capacitat que tenen alguns elements de heretar algunes propi
   color: initial;
 }
 
+=======
+/* Els comentaris en CSS es posen amb CTRL+} */
+
+/* ¿COM FUNCIONA CSS?
+Especificitat -> Estableix com de específic és un selector per saber quin estil aplicar.
+El càlcul es realitza amb la següent fórmula:
+Etiquetes i pseudo-elements 001
+Classes, atributs i pseudo-classes 010
+Ids 100
+Estils en línia 1000
+!important GUANYA A TOT I NO S'USA MAI
+
+Cascada -> Funciona sempre que l'especificitat sobre l'element sigui la mateixa
+
+Herència -> És la capacitat que tenen alguns elements de heretar algunes propietats dels seus elements contenedors (pares, avis, etc)
+*/
+
+/*
+.title {
+  color: cyan;
+  font-size: 1em;
+}
+
+.text {
+  color: red;
+}
+
+.link{
+  color: red;
+}
+
+
+.link {
+  color: inherit;
+}
+
+.list { 
+  color: greenyellow;
+}
+
+.list-item-extra {
+  color: initial;
+}
+
+>>>>>>> d09512015a3dce4ae254158400305bf92d33a001
 */  
